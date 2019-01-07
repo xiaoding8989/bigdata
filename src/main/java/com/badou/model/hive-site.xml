@@ -1,0 +1,45 @@
+<configuration>
+	<property>
+	 	<name>hive.metastore.warehouse.dir</name>
+		<value>/usr/local/src/apache-hive-1.2.2-bin/warehouse</value>
+	</property>
+<!--
+	<property>
+  		<name>hive.support.concurrency</name>
+  		<value>true</value>
+  	</property>
+  	<property>
+  		<name>hive.exec.dynamic.partition.mode</name>
+  		<value>nonstrict</value>
+  	</property>
+  	<property>
+  		<name>hive.txn.manager</name>
+  		<value>org.apache.hadoop.hive.ql.lockmgr.DbTxnManager</value>
+  	</property>
+  	<property>
+  		<name>hive.compactor.initiator.on</name>
+  		<value>true</value>
+  	</property>	
+  	<property>
+  		<name>hive.compactor.worker.threads</name>
+  		<value>1</value>
+  	</property>
+	-->
+	<property>
+		<name>javax.jdo.option.ConnectionURL</name>
+		<value>jdbc:mysql://192.168.174.134:3306/hive?createDatabaseIfNotExist=true</value>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionDriverName</name>
+		<value>com.mysql.jdbc.Driver</value>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionUserName</name>
+		<value>root</value>
+	</property>
+	<property>
+		<name>javax.jdo.option.ConnectionPassword</name>
+		<value>123456</value>
+	</property>
+
+</configuration>

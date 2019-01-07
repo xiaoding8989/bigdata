@@ -1,0 +1,42 @@
+<configuration>
+<property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://192.168.95.5:3306/hive?createDatabaseIfNotExist=true</value>
+  </property>
+<property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+   <value>com.mysql.jdbc.Driver</value>
+  </property>
+
+<property>
+  <name>javax.jdo.option.ConnectionUserName</name>
+   <value>root</value>
+   </property>
+
+<property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+        <value>123456</value>
+    </property>
+<property>
+	<name>hive.support.concurrency</name>
+	<value>true</value>
+</property>
+<property>
+	<name>hive.exec.dynamic.partition.mode</name>
+	<value>nonstrict</value>
+</property>
+<property>
+		<name>hive.txn.manager</name>
+		<value>org.apache.hadoop.hive.ql.lockmgr.DbTxnManager</value>
+</property>
+<property>
+		<name>hive.compactor.initiator.on</name>
+		<value>true</value>
+</property>
+	<property>
+		<name>hive.compactor.worker.threads</name>
+		<value>1</value>
+	</property>
+
+</configuration>
+
